@@ -1,0 +1,139 @@
+/* index.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #4a90e2;
+  text-shadow: 2px 2px gray;
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+#todo-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #4a90e2;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+li.complete {
+  background-color: #e0ffe0;
+}
+li.complete .toto-content {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.check-btn,
+.delete-btn {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.check-btn {
+  color: green;
+}
+.toto-content {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.delete-btn {
+  color: red;
+}
+
+.delete-btn-wrapper {
+  margin-top: 20px;
+}
+
+.delete-btn-wrapper button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn-wrapper button:hover {
+  background-color: #2b79d4;
+}
+
+.confirm-popup {
+  position: fixed;
+  top: 21%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.confirm-popup p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.confirm-popup button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.confirm-popup button:first-child {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.confirm-popup button:last-child {
+  background-color: #4a90e2;
+  color: white;
+}

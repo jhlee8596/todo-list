@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-list</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
+    <script src="./script/index.js" defer></script>
+</head>
+
+<body>
+    <h1 id="location-name-tag">ToDo</h1>
+    <div class="todo-container">
+        <input type="text" id="todo-input" onkeydown="keyCodeCheck()" placeholder="할 일을 추가해주세요!">
+        <ul id="todo-list"></ul>
+    </div>
+
+    <div class="delete-btn-wrapper">
+        <button type="button" onclick="deleteAll()">전체 삭제</button>
+    </div>
+</body>
+
+</html>
